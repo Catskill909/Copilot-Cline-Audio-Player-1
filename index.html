@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Skool Sessions Stream</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&family=Work+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="album-art">
+            <img id="albumArt" src="https://supersoul.site/api/station/oss/art/9ed0f51c230eedbdba17f5e7-1702831284.jpg" alt="Album Art">
+        </div>
+        <div class="metadata">
+            <h2 id="title" class="title">Loading...</h2>
+            <p id="artist" class="artist">Loading...</p>
+        </div>
+        <div class="controls">
+            <button id="playButton" class="play-button">
+                <span class="material-icons">play_circle_filled</span>
+            </button>
+        </div>
+        <div class="visualizer">
+            <canvas id="spectrogram"></canvas>
+        </div>
+        <audio id="audioPlayer" crossorigin="anonymous">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
